@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Dashboard-EcoVerse</title>
+    <link rel="stylesheet" href="/assets/css/dashboard.css" />
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+   <!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+          <div class="avatar">JD</div>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="/settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            <a href="/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i>Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i>Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i>Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+      </ul>
+    </aside>
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+      <!-- Streak Card -->
+      <div class="card">
+        <div class="streak-section">
+          <div class="streak-flame">
+            <i class="fas fa-fire flame-icon"></i>
+          </div>
+          <h2 class="streak-title">Sustainability Streak</h2>
+          <div class="streak-count" id="streakCount">4 Hari</div>
+          <p class="streak-subtext">Ayo terus jaga lingkungan hari ini!</p>
+          <button class="streak-btn" id="activateStreak">
+            Aktifkan Streak Hari Ini
+          </button>
+        </div>
+
+        <!-- Calendar -->
+        <div class="calendar">
+          <h3 class="calendar-title">Juli 2023</h3>
+          <div class="week-days">
+            <div class="week-day">M</div>
+            <div class="week-day">T</div>
+            <div class="week-day">W</div>
+            <div class="week-day">T</div>
+            <div class="week-day">F</div>
+            <div class="week-day">S</div>
+            <div class="week-day">S</div>
+          </div>
+          <div class="calendar-days" id="calendarDays">
+            <!-- Calendar days will be populated by JavaScript -->
+          </div>
+        </div>
+      </div>
+
+      <!-- EcoPoints & History -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">EcoPoints & Aktivitas</h3>
+        </div>
+
+        <div class="points-header">
+          <div>
+            <div class="points-total" id="totalPoints">540</div>
+            <div class="points-label">Total EcoPoints</div>
+          </div>
+        </div>
+
+        <div class="history-list">
+          <div class="history-item">
+            <div class="history-date">Hari Ini</div>
+            <div class="history-activity">Setor Sampah Organik</div>
+            <div class="history-points">+20 poin</div>
+            <div class="history-status active">🔥</div>
+          </div>
+          <div class="history-item">
+            <div class="history-date">Kemarin</div>
+            <div class="history-activity">Menonton Video Edukasi</div>
+            <div class="history-points">+10 poin</div>
+            <div class="history-status active">🔥</div>
+          </div>
+          <div class="history-item">
+            <div class="history-date">2 Jul</div>
+            <div class="history-activity">Mengikuti Kuis Lingkungan</div>
+            <div class="history-points">+15 poin</div>
+            <div class="history-status active">🔥</div>
+          </div>
+          <div class="history-item">
+            <div class="history-date">1 Jul</div>
+            <div class="history-activity">Daur Ulang Plastik</div>
+            <div class="history-points">+25 poin</div>
+            <div class="history-status active">🔥</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Promo Slider -->
+      <div class="card promo-slider">
+        <div class="slider-container" id="sliderContainer">
+          <div class="slide slide-1">
+            <h3 class="slide-title">Double Points Today!</h3>
+            <p class="slide-desc">
+              Complete any eco-activity and get 2x EcoPoints until midnight
+            </p>
+            <button class="slide-btn">Learn More</button>
+          </div>
+          <div class="slide slide-2">
+            <h3 class="slide-title">Recycling Challenge</h3>
+            <p class="slide-desc">
+              Recycle 10 plastic items this week and earn a special badge
+            </p>
+            <button class="slide-btn">Join Challenge</button>
+          </div>
+          <div class="slide slide-3">
+            <h3 class="slide-title">New Educational Video</h3>
+            <p class="slide-desc">
+              Learn about sustainable living in our latest video series
+            </p>
+            <button class="slide-btn">Watch Now</button>
+          </div>
+        </div>
+        <div class="slider-indicators" id="sliderIndicators">
+          <!-- Indicators will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Achievements -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Pencapaian</h3>
+        </div>
+
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <div class="achievement-icon achievement-1">
+              <i class="fas fa-medal"></i>
+            </div>
+            <div class="achievement-info">
+              <div class="achievement-name">3 Hari Berturut-turut</div>
+              <div class="achievement-desc">Memilah Sampah</div>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon achievement-2">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="achievement-info">
+              <div class="achievement-name">1 Minggu Tanpa Plastik</div>
+              <div class="achievement-desc">Hanya 2 hari lagi!</div>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-icon achievement-3">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="achievement-info">
+              <div class="achievement-name">Pahlawan Lingkungan</div>
+              <div class="achievement-desc">10 aksi ramah lingkungan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal History Timeline -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Riwayat Aktivitas</h3>
+        </div>
+
+        <div class="timeline-filters">
+          <button class="filter-chip active" data-filter="all">All</button>
+          <button class="filter-chip" data-filter="recycling">Recycling</button>
+          <button class="filter-chip" data-filter="learning">Learning</button>
+          <button class="filter-chip" data-filter="streak">Streak</button>
+          <button class="filter-chip" data-filter="rewards">Rewards</button>
+        </div>
+
+        <div class="timeline" id="timeline">
+          <div class="timeline-item" data-category="recycling">
+            <div class="timeline-icon icon-recycle">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">Hari Ini, 10:30</div>
+              <div class="timeline-activity">Setor Sampah Organik</div>
+              <div class="timeline-points">+20 poin</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-category="learning">
+            <div class="timeline-icon icon-learning">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">Kemarin, 15:45</div>
+              <div class="timeline-activity">Menonton Video Edukasi</div>
+              <div class="timeline-points">+10 poin</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-category="learning">
+            <div class="timeline-icon icon-quiz">
+              <i class="fas fa-question-circle"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">2 Jul, 09:15</div>
+              <div class="timeline-activity">Mengikuti Kuis Lingkungan</div>
+              <div class="timeline-points">+15 poin</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-category="recycling">
+            <div class="timeline-icon icon-recycle">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">1 Jul, 14:20</div>
+              <div class="timeline-activity">Daur Ulang Plastik</div>
+              <div class="timeline-points">+25 poin</div>
+            </div>
+          </div>
+          <div class="timeline-item" data-category="streak">
+            <div class="timeline-icon icon-streak">
+              <i class="fas fa-fire"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">30 Jun, 08:00</div>
+              <div class="timeline-activity">Sustainability Streak</div>
+              <div class="timeline-points">+5 poin</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Insights -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Insights Tersedia</h3>
+        </div>
+
+        <div class="insights-item">
+          <div class="insights-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="achievement-info">
+            <div class="achievement-name">2 Insights Tersedia</div>
+            <div class="achievement-desc">Lihat analisis kebiasaan Anda</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/dashboard.js"></script>
+  </body>
+</html>

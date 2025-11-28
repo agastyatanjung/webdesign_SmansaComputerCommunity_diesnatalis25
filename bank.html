@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link
+          rel="icon"
+          href="/assets/img/PURELOGO.png"
+          type="image/png"
+          sizes="32x32"
+        />
+        <link rel="stylesheet" href="/assets/css/user.css" />
+        <!--LINK'S FOR FONTS-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet"
+        />
+        <!--LINK'S FONTAWSOME CDN-->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+          integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+          anonymous
+        />
+        
+        <link rel="stylesheet" href="assets/css/bank.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Bank - EcoVerse</title>
+  </head>
+  <body>
+        <!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+          <div class="avatar">JD</div>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="/settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            <a href="/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i>Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i>Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i>Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+      </ul>
+    </aside>
+        <div class="container">
+          <!-- Page Header -->
+          <div class="page-header">
+            <h1 class="page-title">Eco Bank</h1>
+            <p class="page-subtitle">
+              Monitor, deposit, and grow your eco-impact.
+            </p>
+          
+          </div>
+
+          <!-- Main Grid -->
+          <div class="grid">
+            <!-- Eco Balance Card -->
+            <div class="col-8">
+              <div class="card eco-balance-card">
+                <div class="balance-main">
+                  <div>
+                    <div class="balance-amount">1,250</div>
+                    <div class="balance-label">Eco Points</div>
+                  </div>
+                  <div class="progress-ring">
+                    <div class="progress-bg"></div>
+                    <div class="progress-value">75%</div>
+                  </div>
+                </div>
+                <div class="balance-stats">
+                  <div class="stat-item">
+                    <div class="stat-value">42.5 kg</div>
+                    <div class="stat-label">Waste Deposited</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">18.3 kg</div>
+                    <div class="stat-label">CO₂ Saved</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-value">28 Days</div>
+                    <div class="stat-label">Recycling Streak</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Goals Card -->
+            <div class="col-4">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Goals & Milestones</h3>
+                  <div class="card-icon">
+                    <i class="fas fa-flag"></i>
+                  </div>
+                </div>
+                <div class="goals-list">
+                  <div class="goal-item">
+                    <div class="goal-header">
+                      <div class="goal-title">Plastic Recycling</div>
+                      <div class="goal-points">+50 Points</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress-fill progress-30"></div>
+                    </div>
+                    <div class="goal-desc">3.2/10 kg</div>
+                  </div>
+                  <div class="goal-item">
+                    <div class="goal-header">
+                      <div class="goal-title">Paper Collection</div>
+                      <div class="goal-points">+30 Points</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress-fill progress-60"></div>
+                    </div>
+                    <div class="goal-desc">6/10 kg</div>
+                  </div>
+                  <div class="goal-item">
+                    <div class="goal-header">
+                      <div class="goal-title">Eco Level</div>
+                      <div class="goal-points">Earth Guardian</div>
+                    </div>
+                    <div class="progress-bar">
+                      <div class="progress-fill progress-80"></div>
+                    </div>
+                    <div class="goal-desc">Green Starter → Earth Guardian</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Category Deposit Selector -->
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Deposit Categories</h3>
+                  <div class="card-icon">
+                    <i class="fas fa-recycle"></i>
+                  </div>
+                </div>
+                <div class="category-grid">
+                  <div class="category-item" data-category="plastic">
+                    <div class="category-icon">
+                      <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="category-name">Plastic</div>
+                  </div>
+                  <div class="category-item" data-category="paper">
+                    <div class="category-icon">
+                      <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="category-name">Paper</div>
+                  </div>
+                  <div class="category-item" data-category="glass">
+                    <div class="category-icon">
+                      <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <div class="category-name">Glass</div>
+                  </div>
+                  <div class="category-item" data-category="organic">
+                    <div class="category-icon">
+                      <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="category-name">Organic</div>
+                  </div>
+                  <div class="category-item" data-category="metal">
+                    <div class="category-icon">
+                      <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="category-name">Metal</div>
+                  </div>
+                  <div class="category-item" data-category="e-waste">
+                    <div class="category-icon">
+                      <i class="fas fa-laptop"></i>
+                    </div>
+                    <div class="category-name">E-Waste</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Recent Transactions</h3>
+                  <div class="card-icon">
+                    <i class="fas fa-history"></i>
+                  </div>
+                </div>
+                <div class="transaction-list">
+                  <div class="transaction-item">
+                    <div class="transaction-icon">
+                      <i class="fas fa-wine-bottle"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-desc">
+                        Deposited 1.2 kg Plastic
+                      </div>
+                      <div class="transaction-date">Today, 10:24 AM</div>
+                    </div>
+                    <div class="transaction-points">+24</div>
+                  </div>
+                  <div class="transaction-item">
+                    <div class="transaction-icon">
+                      <i class="fas fa-newspaper"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-desc">Deposited 0.8 kg Paper</div>
+                      <div class="transaction-date">Yesterday, 3:45 PM</div>
+                    </div>
+                    <div class="transaction-points">+16</div>
+                  </div>
+                  <div class="transaction-item">
+                    <div class="transaction-icon">
+                      <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-desc">
+                        Deposited 2.1 kg Organic
+                      </div>
+                      <div class="transaction-date">Apr 12, 2023</div>
+                    </div>
+                    <div class="transaction-points">+42</div>
+                  </div>
+                  <div class="transaction-item">
+                    <div class="transaction-icon">
+                      <i class="fas fa-glass-whiskey"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-desc">Deposited 0.5 kg Glass</div>
+                      <div class="transaction-date">Apr 10, 2023</div>
+                    </div>
+                    <div class="transaction-points">+10</div>
+                  </div>
+                  <div class="transaction-item">
+                    <div class="transaction-icon">
+                      <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="transaction-details">
+                      <div class="transaction-desc">Deposited 1.5 kg Metal</div>
+                      <div class="transaction-date">Apr 8, 2023</div>
+                    </div>
+                    <div class="transaction-points">+30</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Analytics & Insights -->
+            <div class="col-6">
+              <div class="card">
+                <div class="card-header">
+                  <h3 class="card-title">Analytics & Insights</h3>
+                  <div class="card-icon">
+                    <i class="fas fa-chart-line"></i>
+                  </div>
+                </div>
+                <div class="analytics-grid">
+                  <div class="analytics-card">
+                    <div class="analytics-icon">
+                      <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="analytics-content">
+                      <div class="analytics-title">Weekly Recycling</div>
+                      <div class="analytics-value">+12% This Week</div>
+                    </div>
+                  </div>
+                  <div class="analytics-card">
+                    <div class="analytics-icon">
+                      <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="analytics-content">
+                      <div class="analytics-title">Top Category</div>
+                      <div class="analytics-value">Organic Waste</div>
+                    </div>
+                  </div>
+                  <div class="analytics-card">
+                    <div class="analytics-icon">
+                      <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <div class="analytics-content">
+                      <div class="analytics-title">Monthly Comparison</div>
+                      <div class="analytics-value">+8.5 kg vs Last Month</div>
+                    </div>
+                  </div>
+                  <div class="analytics-card">
+                    <div class="analytics-icon">
+                      <i class="fas fa-fire"></i>
+                    </div>
+                    <div class="analytics-content">
+                      <div class="analytics-title">Contribution Streak</div>
+                      <div class="analytics-value">28 Days Active</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Educational Banner -->
+            <div class="col-12">
+              <div class="edu-banner">
+                <div class="edu-content">
+                  <h3 class="edu-title">Why Depositing Matters</h3>
+                  <p class="edu-desc">
+                    Every kilogram of waste you deposit reduces CO₂ emissions,
+                    conserves natural resources, and contributes to a circular
+                    economy. Your eco-actions create real environmental impact.
+                  </p>
+                </div>
+                <div class="edu-icon">
+                  <i class="fas fa-seedling"></i>
+                </div>
+              </div>
+            </div>
+
+            <!-- Promo Slider -->
+            <div class="col-12">
+              <div class="promo-slider">
+                <div class="promo-track">
+                  <div class="promo-slide">
+                    <div class="promo-badge">Special Offer</div>
+                    <h3 class="promo-title">Double Points Week</h3>
+                    <p class="promo-desc">
+                      Deposit plastic waste this week and earn 2x eco-points!
+                      Limited time offer.
+                    </p>
+                  </div>
+                </div>
+                <div class="slider-dots">
+                  <div class="dot active"></div>
+                  <div class="dot"></div>
+                  <div class="dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Deposit Modal -->
+        <div class="modal-overlay" id="modalOverlay">
+          <div class="modal">
+            <div class="modal-header">
+              <div class="modal-icon" id="modalIcon">
+                <i class="fas fa-wine-bottle"></i>
+              </div>
+              <h2 class="modal-title" id="modalTitle">Deposit Plastic</h2>
+            </div>
+            <form id="depositForm">
+              <div class="form-group">
+                <label class="form-label" for="amount"
+                  >Amount of Waste (kg)</label
+                >
+                <input
+                  type="number"
+                  class="form-input"
+                  id="amount"
+                  placeholder="Enter amount in kilograms"
+                  step="0.1"
+                  min="0.1"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="subcategory"
+                  >Type / Sub-category</label
+                >
+                <select class="form-select" id="subcategory">
+                  <option value="bottles">Plastic Bottles</option>
+                  <option value="containers">Containers</option>
+                  <option value="packaging">Packaging</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="modal-actions">
+                <button type="button" class="btn btn-outline" id="cancelBtn">
+                  Cancel
+                </button>
+                <button type="submit" class="btn btn-primary">
+                  Confirm Deposit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast">
+          <div class="toast-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="toast-message" id="toastMessage">
+            Deposit confirmed! +24 Eco Points
+          </div>
+        </div>
+<!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+    
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+        <script src="assets/js/bank.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

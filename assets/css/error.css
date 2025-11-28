@@ -1,0 +1,340 @@
+:root {
+  --primary-green: #2e8b57;
+  --light-green: #7bc396;
+  --pale-green: #e8f5e9;
+  --dark-green: #1a5d3a;
+  --text-dark: #2d3748;
+  --text-light: #718096;
+  --white: #ffffff;
+  --radius: 16px;
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-image: radial-gradient(var(--pale-green) 2px, transparent 2px);
+  background-size: 30px 30px;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.error-illustration {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 2rem;
+  position: relative;
+}
+
+.earth {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(
+    135deg,
+    var(--primary-green) 0%,
+    var(--light-green) 100%
+  );
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.earth::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background-color: var(--light-green);
+  bottom: 0;
+  border-radius: 0 0 70px 70px;
+}
+
+.earth::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: var(--pale-green);
+  border-radius: 50%;
+  top: 30%;
+  left: 25%;
+  box-shadow: 40px 10px 0 -5px var(--pale-green),
+    20px -20px 0 0 var(--pale-green), -20px 30px 0 5px var(--pale-green);
+}
+
+.leaf {
+  position: absolute;
+  width: 40px;
+  height: 60px;
+  background-color: var(--primary-green);
+  border-radius: 50% 0 50% 0;
+  opacity: 0.8;
+}
+
+.leaf-1 {
+  top: 20px;
+  right: 30px;
+  transform: rotate(45deg);
+  background-color: var(--light-green);
+}
+
+.leaf-2 {
+  bottom: 40px;
+  left: 20px;
+  transform: rotate(-20deg);
+}
+
+.leaf-3 {
+  top: 60px;
+  left: 40px;
+  transform: rotate(10deg);
+  width: 30px;
+  height: 45px;
+  background-color: var(--light-green);
+}
+
+.error-content {
+  background-color: var(--white);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  box-shadow: var(--shadow);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.error-code {
+  font-size: 5rem;
+  font-weight: 300;
+  color: var(--primary-green);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+}
+
+.description {
+  color: var(--text-light);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  color: var(--white);
+  box-shadow: 0 4px 12px rgba(46, 139, 87, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(46, 139, 87, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--primary-green);
+  border: 1px solid var(--primary-green);
+}
+
+.btn-secondary:hover {
+  background-color: var(--pale-green);
+  transform: translateY(-2px);
+}
+
+.suggestions {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e8f0;
+  width: 100%;
+  max-width: 500px;
+}
+
+.suggestions h3 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-weight: 500;
+}
+
+.suggestion-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.suggestion-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.suggestion-link:hover {
+  background-color: var(--pale-green);
+}
+
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+}
+
+/* Animation for the leaves */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+}
+
+.leaf-1 {
+  animation: float 4s ease-in-out infinite;
+}
+
+.leaf-2 {
+  animation: float 5s ease-in-out infinite 0.5s;
+}
+
+.leaf-3 {
+  animation: float 6s ease-in-out infinite 1s;
+}
+
+/* Responsive adjustments - FIXED ISSUES */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem; /* Reduced padding on mobile */
+  }
+
+  .container {
+    max-width: 100%; /* Ensure container doesn't exceed viewport */
+  }
+
+  .error-content {
+    padding: 2rem 1.5rem;
+    max-width: 100%; /* Ensure content doesn't exceed viewport */
+  }
+
+  .error-code {
+    font-size: 4rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .suggestions {
+    max-width: 100%; /* Ensure suggestions don't exceed viewport */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .error-illustration {
+    width: 160px;
+    height: 160px;
+  }
+
+  .earth {
+    width: 120px;
+    height: 120px;
+  }
+
+  .error-code {
+    font-size: 3.5rem;
+  }
+
+  h1 {
+    font-size: 1.25rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .error-content {
+    padding: 1.5rem 1rem; /* Further reduced padding on very small screens */
+  }
+
+  .suggestion-links {
+    gap: 0.5rem; /* Reduced gap on very small screens */
+  }
+
+  .suggestion-link {
+    padding: 0.4rem 0.8rem; /* Smaller padding on very small screens */
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,74 @@
+/* 2. Kontainer Latar Belakang */
+.background-container {
+  position: fixed; /* Tetap di tempat saat di-scroll */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Posisikan di belakang konten */
+  overflow: hidden; /* Sembunyikan bagian blob yang keluar layar */
+}
+
+/* 3. Styling Bentuk 'Blob' */
+.shape {
+  position: absolute;
+  border-radius: 50%; /* Membuatnya menjadi lingkaran */
+
+  /* KUNCI EFEK: 
+      Blur ini mengubah lingkaran tajam menjadi 'blob' yang lembut.
+      Semakin besar nilainya, semakin lembut.
+    */
+  filter: blur(50px);
+  opacity: 1; /* Buat sedikit transparan */
+
+  /* Terapkan animasi 'float' */
+  animation: float 20s ease-in-out infinite;
+}
+
+/* 4. Posisi, Ukuran, dan Warna Spesifik untuk Tiap Blob */
+
+.shape1 {
+  width: 400px;
+  height: 400px;
+  background: var(--shape-color1);
+  top: -100px;
+  left: -100px;
+  animation-duration: 18s; /* Durasi animasi berbeda */
+}
+
+.shape2 {
+  width: 500px;
+  height: 500px;
+  background: var(--shape-color2);
+  bottom: -150px;
+  right: -150px;
+  animation-duration: 22s; /* Durasi animasi berbeda */
+  animation-delay: -5s; /* Mulai animasi di waktu yang berbeda */
+}
+
+.shape3 {
+  width: 300px;
+  height: 300px;
+  background: var(--shape-color3);
+  bottom: 50%;
+  left: 20%;
+  animation-duration: 20s;
+}
+
+/* 5. Keyframes Animasi untuk Bergerak */
+@keyframes float {
+  0% {
+    transform: translateY(0px) translateX(0px);
+  }
+  50% {
+    /* Gerakkan 'blob' ke posisi baru */
+    transform: translateY(-30px) translateX(40px);
+  }
+  100% {
+    transform: translateY(0px) translateX(0px);
+  }
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+}

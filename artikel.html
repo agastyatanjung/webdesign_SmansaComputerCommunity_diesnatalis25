@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/PURELOGO.png" type="image/png" sizes="32x32" />
+    <link
+  rel="icon"
+  href="/assets/img/PURELOGO.png"
+  type="image/png"
+  sizes="32x32"
+/>
+<link rel="stylesheet" href="/assets/css/user.css" />
+<!--LINK'S FOR FONTS-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+  rel="stylesheet"
+/>
+<!--LINK'S FONTAWSOME CDN-->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  anonymous
+/>
+
+<link rel="stylesheet" href="/assets/css/artikel.css">
+    <title>Artikel</title>
+</head>
+<body>
+     <!-- Background Particles -->
+    <div id="particles-container"></div>
+
+    <div class="container">
+      <!-- Page Header -->
+      <header class="page-header">
+        <h1 class="page-title">Latest Environment News</h1>
+        <p class="page-subtitle">
+          Real-time updates on environmental issues, climate events,
+          sustainability, eco-economics, and green technology.
+        </p>
+      </header>
+
+      <!-- News Count -->
+      <div class="news-count">
+        Showing <span id="article-count">12</span> environment news articles
+      </div>
+
+      <!-- Featured News Hero -->
+      <section class="featured-news">
+        <div class="hero-article">
+          <img
+            src="/assets/img/artikel/climatesummit.jpeg"
+            alt="Climate Summit"
+            class="hero-image"
+          />
+          <div class="hero-content">
+            <h2 class="hero-title">
+              Global Climate Summit Reaches Historic Agreement on Carbon
+              Neutrality by 2040
+            </h2>
+            <p class="hero-summary">
+              World leaders unite on ambitious plan to accelerate transition to
+              renewable energy and establish global carbon trading system.
+            </p>
+            <div class="hero-meta">
+              <span>2 hrs ago</span>
+              <span>|</span>
+              <span>Climate</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-articles">
+          <div class="side-article">
+            <img
+              src="/assets/img/artikel/solarfarm.jpeg"
+              alt="Solar Farm"
+              class="side-image"
+            />
+            <div class="side-content">
+              <h3 class="side-title">
+                Breakthrough in Solar Panel Efficiency Reaches 45%
+              </h3>
+              <p class="side-excerpt">
+                New perovskite technology could revolutionize renewable energy
+                adoption worldwide.
+              </p>
+              <div class="side-meta">4 hrs ago | Innovation</div>
+            </div>
+          </div>
+
+          <div class="side-article">
+            <img
+              src="/assets/img/artikel/oceanclaenup.jpeg"
+              alt="Ocean Cleanup"
+              class="side-image"
+            />
+            <div class="side-content">
+              <h3 class="side-title">
+                Pacific Ocean Cleanup Project Removes Record 100 Tons of Plastic
+              </h3>
+              <p class="side-excerpt">
+                Massive floating barrier system shows promise in tackling ocean
+                pollution.
+              </p>
+              <div class="side-meta">6 hrs ago | Conservation</div>
+            </div>
+          </div>
+
+          <div class="side-article">
+            <img
+              src="/assets/img/artikel/electric.jpeg"
+              alt="Electric Vehicles"
+              class="side-image"
+            />
+            <div class="side-content">
+              <h3 class="side-title">
+                Electric Vehicle Sales Surpass 30% Market Share in Europe
+              </h3>
+              <p class="side-excerpt">
+                Government incentives and improved charging infrastructure drive
+                rapid adoption.
+              </p>
+              <div class="side-meta">8 hrs ago | Eco-Economy</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Categories Section -->
+      <section class="categories-section">
+        <h2 class="categories-title">Browse by Category</h2>
+        <div class="categories">
+          <div class="category active">All News</div>
+          <div class="category">Climate & Weather</div>
+          <div class="category">Natural Disasters</div>
+          <div class="category">Pollution & Waste</div>
+          <div class="category">Sustainability & Innovation</div>
+          <div class="category">Eco-Economy & Green Stocks</div>
+          <div class="category">Wildlife & Conservation</div>
+        </div>
+      </section>
+
+      <!-- Data Highlights -->
+      <section class="data-highlights">
+        <div class="data-widget">
+          <div class="data-title">
+            <i class="fas fa-wind"></i>
+            <span>AQI Update</span>
+          </div>
+          <div class="data-value">42</div>
+          <div class="data-trend positive">Good • Improving</div>
+        </div>
+
+        <div class="data-widget">
+          <div class="data-title">
+            <i class="fas fa-tree"></i>
+            <span>Deforestation Index</span>
+          </div>
+          <div class="data-value">-3.2%</div>
+          <div class="data-trend positive">Slowing • YTD</div>
+          <div class="chart-mini"></div>
+        </div>
+
+        <div class="data-widget">
+          <div class="data-title">
+            <i class="fas fa-temperature-high"></i>
+            <span>Ocean Temperature</span>
+          </div>
+          <div class="data-value">+0.8°C</div>
+          <div class="data-trend negative">Above Average</div>
+        </div>
+
+        <div class="data-widget">
+          <div class="data-title">
+            <i class="fas fa-industry"></i>
+            <span>Carbon Emissions</span>
+          </div>
+          <div class="data-value">-4.5%</div>
+          <div class="data-trend positive">Reducing • Q3</div>
+          <div class="chart-mini"></div>
+        </div>
+      </section>
+
+      <!-- News Grid -->
+      <section class="news-grid" id="news-container">
+        <!-- Articles will be loaded here by JavaScript -->
+      </section>
+
+      <!-- Load More Section -->
+      <section class="load-more-section">
+        <button class="btn" id="load-more-btn">
+          <span>Load more environment news</span>
+        </button>
+      </section>
+      <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+      <script src="/assets/js/artikel.js"></script>
+</body>
+</html>

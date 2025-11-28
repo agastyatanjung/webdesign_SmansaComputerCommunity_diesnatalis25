@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="/assets/css/user.css" />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      anonymous
+    />
+    <link rel="stylesheet" href="/assets/css/scanner.css" />
+    <title>AI Scanner - EcoVerser</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+ <!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+          <div class="avatar">JD</div>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="/settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            <a href="/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i>Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i>Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i>Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+      </ul>
+    </aside>
+  <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="scan-icon">
+            <i class="fas fa-camera"></i>
+          </div>
+          <h1>Scan with Ecoverse AI</h1>
+          <p class="hero-subtitle">
+            Identifikasi sampah secara instan dan dapatkan solusi paling ramah
+            lingkungan.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scan Section -->
+    <section class="scan-section">
+      <div class="container">
+        <div class="scan-box">
+          <h2>Unggah Gambar Sampah</h2>
+          <p>Upload foto sampah untuk analisis AI kami</p>
+
+          <div class="upload-area" id="uploadArea">
+            <div class="upload-icon">
+              <i class="fas fa-cloud-upload-alt"></i>
+            </div>
+            <div class="upload-text">Drag & Drop gambar di sini</div>
+            <div class="upload-hint">Atau klik untuk memilih file</div>
+          </div>
+
+          <input
+            type="file"
+            id="fileInput"
+            accept="image/*"
+            style="display: none"
+          />
+
+          <button class="btn" id="uploadBtn">
+            <i class="fas fa-upload"></i> Upload Image
+          </button>
+
+          <p class="privacy-note">
+            Data Anda aman. Tidak disimpan dalam server.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Result Section -->
+    <section class="result-section" id="resultSection">
+      <div class="container">
+        <h2>Hasil Analisis AI</h2>
+        <p>Ecoverse AI telah menganalisis sampah Anda</p>
+
+        <div class="result-grid">
+          <div class="result-card">
+            <div class="result-icon">
+              <i class="fas fa-trash"></i>
+            </div>
+            <h3>Jenis Sampah</h3>
+            <p>Botol Plastik PET</p>
+          </div>
+
+          <div class="result-card">
+            <div class="result-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Tingkat Daur Ulang</h3>
+            <div class="progress-container">
+              <div class="progress-label">
+                <span>85% Dapat Didaur Ulang</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 85%"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="result-card">
+            <div class="result-icon">
+              <i class="fas fa-hand-holding-water"></i>
+            </div>
+            <h3>Cara Pengolahan</h3>
+            <p>
+              Cuci bersih, keringkan, dan bawa ke bank sampah terdekat untuk
+              didaur ulang.
+            </p>
+          </div>
+
+          <div class="result-card">
+            <div class="result-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Dampak Lingkungan</h3>
+            <p>
+              Dengan mendaur ulang, Anda menghemat energi setara dengan 3 jam
+              penggunaan AC.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Section -->
+    <section class="recommendation-section">
+      <div class="container">
+        <h2>Apa yang Bisa Kamu Lakukan Selanjutnya?</h2>
+        <p>Langkah-langkah untuk mengurangi dampak lingkungan</p>
+
+        <div class="recommendation-grid">
+          <div class="recommendation-card">
+            <div class="recommendation-icon">
+              <i class="fas fa-minus-circle"></i>
+            </div>
+            <h3>Reduce</h3>
+            <p>
+              Kurangi penggunaan plastik sekali pakai dengan membawa botol minum
+              dan tas belanja sendiri.
+            </p>
+          </div>
+
+          <div class="recommendation-card">
+            <div class="recommendation-icon">
+              <i class="fas fa-redo-alt"></i>
+            </div>
+            <h3>Reuse</h3>
+            <p>
+              Gunakan kembali wadah plastik untuk penyimpanan atau kerajinan
+              tangan sebelum didaur ulang.
+            </p>
+          </div>
+
+          <div class="recommendation-card">
+            <div class="recommendation-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3>Recycle</h3>
+            <p>
+              Pisahkan sampah berdasarkan jenisnya dan bawa ke fasilitas daur
+              ulang terdekat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>Siap untuk membuat perubahan?</h2>
+        <p>
+          Teruslah memindai dan berkontribusi pada lingkungan yang lebih bersih
+        </p>
+
+        <div class="cta-buttons">
+          <button class="btn" id="scanAgainBtn">
+            <i class="fas fa-camera"></i> Scan Lagi
+          </button>
+          <a class="btn btn-outline" href="/bank.html">
+            <i class="fas fa-database"></i> Lihat Bank Data
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="assets/js/scanner.js"></script>
+  </body>
+</html>
