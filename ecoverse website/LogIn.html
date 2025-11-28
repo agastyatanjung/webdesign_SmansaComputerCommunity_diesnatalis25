@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      anonymous
+    />
+
+    <link rel="stylesheet" href="/assets/css/Login.css" />
+    <title>Registration</title>
+  </head>
+  <body>
+    <!-- Background Particles -->
+    <div id="particles-container"></div>
+
+    <div class="container">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <div class="hero-content">
+          <div class="logo">
+            <div class="logo-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="logo-text">Ecoverse</div>
+          </div>
+
+          <h1 class="hero-title">Join the Future of Sustainable Living</h1>
+          <p class="hero-subtitle">
+            Akses fitur AI, marketplace ramah bumi, dan eco-bank dalam satu
+            ekosistem.
+          </p>
+
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="feature-text">
+                <div class="feature-title">AI-Powered Waste Scanning</div>
+                <div class="feature-desc">
+                  Identifikasi sampah dengan teknologi AI canggih
+                </div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <div class="feature-text">
+                <div class="feature-title">Eco Marketplace</div>
+                <div class="feature-desc">
+                  Produk ramah lingkungan dari merchant terpercaya
+                </div>
+              </div>
+            </div>
+
+            <div class="feature">
+              <div class="feature-icon">
+                <i class="fas fa-piggy-bank"></i>
+              </div>
+              <div class="feature-text">
+                <div class="feature-title">Eco Bank & Rewards</div>
+                <div class="feature-desc">
+                  Dapatkan poin untuk setiap aksi ramah lingkungan
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <div class="form-container">
+          <div class="form-card">
+            <div class="form-tabs">
+              <div class="form-tab active" data-tab="login">Log In</div>
+              <div class="form-tab" data-tab="register">Register</div>
+            </div>
+
+            <div class="form-content">
+              <!-- Login Form -->
+              <form class="form active" id="login-form">
+                <h2 class="form-title">Welcome Back</h2>
+
+                <div class="form-group">
+                  <label class="form-label" for="login-email">Email</label>
+                  <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <input
+                    type="email"
+                    id="login-email"
+                    class="form-input with-icon"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="login-password"
+                    >Password</label
+                  >
+                  <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                  <input
+                    type="password"
+                    id="login-password"
+                    class="form-input with-icon"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+
+                <div class="forgot-password">
+                  <a href="/forgot.html">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="btn">
+                  <a href="/user.html">Log In</a>
+                </button>
+
+                <div class="divider">
+                  <span class="divider-text">or continue with</span>
+                </div>
+
+                <div class="social-login">
+                  <button type="button" class="social-btn google">
+                    <i class="fab fa-google"></i>
+                    <span>Google</span>
+                  </button>
+                  <button type="button" class="social-btn facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                  </button>
+                  <button type="button" class="social-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                  </button>
+                </div>
+
+                <div class="form-footer">
+                  Don't have an account?
+                  <a href="#" class="switch-to-register">Sign up</a>
+                </div>
+              </form>
+
+              <!-- Register Form -->
+              <form class="form" id="register-form">
+                <h2 class="form-title">Create Account</h2>
+
+                <div class="form-group">
+                  <label class="form-label" for="register-name"
+                    >Full Name</label
+                  >
+                  <div class="input-icon">
+                    <i class="fas fa-user"></i>
+                  </div>
+                  <input
+                    type="text"
+                    id="register-name"
+                    class="form-input with-icon"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="register-email">Email</label>
+                  <div class="input-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <input
+                    type="email"
+                    id="register-email"
+                    class="form-input with-icon"
+                    placeholder="your.email@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="register-password"
+                    >Password</label
+                  >
+                  <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                  <input
+                    type="password"
+                    id="register-password"
+                    class="form-input with-icon"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="register-confirm"
+                    >Confirm Password</label
+                  >
+                  <div class="input-icon">
+                    <i class="fas fa-lock"></i>
+                  </div>
+                  <input
+                    type="password"
+                    id="register-confirm"
+                    class="form-input with-icon"
+                    placeholder="••••••••"
+                    required
+                  />
+                </div>
+
+                <div class="checkbox-group">
+                  <input type="checkbox" id="terms" class="checkbox" required />
+                  <label for="terms" class="checkbox-label">
+                    I agree to the <a href="#">Terms & Privacy Policy</a>
+                  </label>
+                </div>
+
+                <button type="submit" class="btn">Create Account</button>
+
+                <div class="form-footer">
+                  Already have an account?
+                  <a href="#" class="switch-to-login">Log in</a>
+                </div>
+              </form>
+            </div>
+
+            <div class="security-notice">
+              <i class="fas fa-shield-alt security-icon"></i>
+              <div>
+                Your data is encrypted and secured with eco-safe technology.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/Login.js"></script>
+  </body>
+</html>

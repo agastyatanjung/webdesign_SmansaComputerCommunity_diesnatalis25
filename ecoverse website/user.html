@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="/assets/css/user.css" />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      anonymous
+    />
+
+    <title>Homepage</title>
+  </head>
+  <body>
+     <div class="background-container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+ <!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+          <div class="avatar">JD</div>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href="/settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            <a href="/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i>Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i>Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i>Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+      </ul>
+    </aside>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome back to Ecoverse, Ketut!</h1>
+        <p>Continue your journey in making a greener future.</p>
+      </div>
+      <div class="hero-illustration">
+
+      </div>
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview">
+      <div class="container">
+        <h2 class="section-title">Your Eco Dashboard</h2>
+        <div class="dashboard-cards">
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Eco Points Today</h3>
+            <p>You've earned 42 points today</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <h3>Ongoing Projects</h3>
+            <p>3 active sustainability projects</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Community Badges</h3>
+            <p>You have 5 eco-achievement badges</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Scanner Section -->
+    <section class="ai-scanner">
+      <div class="container">
+        <div class="ai-scanner-content">
+          <h2 class="section-title">EcoScan AI Waste Identifier</h2>
+          <p>
+            Use our advanced AI to identify waste types and get proper disposal
+            recommendations
+          </p>
+
+          <div class="scanner-card">
+            <div class="scanner-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>AI-Powered Waste Recognition</h3>
+            <p>
+              Simply upload a photo of any waste item, and our AI will instantly
+              identify its type and provide proper disposal guidance.
+            </p>
+            <a href="/scanner.html" class="ai-btn">
+              <i class="fas fa-camera"></i> Go to AI Scanner
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Access -->
+    <section class="quick-access">
+      <div class="container">
+        <h2 class="section-title">Quick Access</h2>
+        <div class="quick-access-cards">
+          <div class="quick-card">
+            <h3><i class="fas fa-trophy"></i> Join Community Challenge</h3>
+            <p>
+              Participate in our monthly eco-challenges and compete with friends
+            </p>
+          </div>
+          <div class="quick-card">
+            <h3><i class="fas fa-book-open"></i> Read Eco Tips</h3>
+            <p>Discover simple ways to reduce your environmental footprint</p>
+          </div>
+          <div class="quick-card">
+            <h3><i class="fas fa-chart-bar"></i> Check Your Activity</h3>
+            <p>Review your sustainability progress and impact metrics</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Updates -->
+    <section class="latest-updates">
+      <div class="container">
+        <h2 class="section-title">Latest Updates</h2>
+        <div class="updates-list">
+          <div class="update-item">
+            <h3>Community News: Earth Day Challenge</h3>
+            <p>
+              Join our special Earth Day challenge starting next week. Plant a
+              tree and earn double points!
+            </p>
+            <div class="update-date">Posted 2 days ago</div>
+          </div>
+          <div class="update-item">
+            <h3>New Project: Urban Gardening Initiative</h3>
+            <p>
+              Our new urban gardening project is now accepting volunteers. Help
+              transform unused city spaces.
+            </p>
+            <div class="update-date">Posted 5 days ago</div>
+          </div>
+          <div class="update-item">
+            <h3>Environmental Article: The Future of Sustainable Cities</h3>
+            <p>
+              Read our latest article on how cities worldwide are implementing
+              green initiatives.
+            </p>
+            <div class="update-date">Posted 1 week ago</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href="/scanner.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="/assets/js/user.js"></script>
+  </body>
+</html>

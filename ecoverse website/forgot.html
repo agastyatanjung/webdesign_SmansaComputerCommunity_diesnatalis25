@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      anonymous
+    />
+
+    <link rel="stylesheet" href="/assets/css/forgot.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Background Particles -->
+    <div id="particles-container"></div>
+
+    <div class="container">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <div class="hero-content">
+          <div class="security-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+
+          <h1 class="hero-title">Reset Your Password</h1>
+          <p class="hero-subtitle">
+            Kami akan membantu kamu mengakses kembali akun Ecoverse-mu dengan
+            aman.
+          </p>
+
+          <div class="security-features">
+            <div class="security-feature">
+              <div class="security-feature-icon">
+                <i class="fas fa-lock"></i>
+              </div>
+              <div class="security-feature-text">
+                <div class="security-feature-title">End-to-End Encryption</div>
+                <div class="security-feature-desc">
+                  Data Anda dienkripsi dari perangkat hingga server
+                </div>
+              </div>
+            </div>
+
+            <div class="security-feature">
+              <div class="security-feature-icon">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="security-feature-text">
+                <div class="security-feature-title">Instant Reset Link</div>
+                <div class="security-feature-desc">
+                  Tautan reset dikirim langsung ke email Anda
+                </div>
+              </div>
+            </div>
+
+            <div class="security-feature">
+              <div class="security-feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="security-feature-text">
+                <div class="security-feature-title">
+                  24/7 Security Monitoring
+                </div>
+                <div class="security-feature-desc">
+                  Sistem kami terus memantau aktivitas mencurigakan
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <div class="form-container">
+          <div class="form-card">
+            <!-- Reset Form -->
+            <div id="reset-form">
+              <h2 class="form-title">Reset Password</h2>
+              <p class="form-subtitle">
+                Masukkan email Anda dan kami akan mengirimkan tautan reset
+                password.
+              </p>
+
+              <div class="form-group">
+                <label class="form-label" for="reset-email"
+                  >Email Address</label
+                >
+                <div class="input-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <input
+                  type="email"
+                  id="reset-email"
+                  class="form-input with-icon"
+                  placeholder="your.email@example.com"
+                  required
+                />
+              </div>
+
+              <button type="button" class="btn" id="reset-btn">
+                Send Reset Link
+              </button>
+
+              <div class="back-link">
+                <a href="/LogIn.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Back to Login
+                </a>
+              </div>
+            </div>
+
+            <!-- Success Message -->
+            <div class="success-state" id="success-state">
+              <div class="success-icon">
+                <i class="fas fa-check"></i>
+              </div>
+              <h3 class="success-title">Check Your Email</h3>
+              <p class="success-message">
+                Kami telah mengirimkan tautan reset password ke email Anda.
+                Tautan akan kadaluarsa dalam 1 jam.
+              </p>
+
+              <button type="button" class="btn" id="resend-btn">
+                Resend Link
+              </button>
+
+              <div class="back-link">
+                <a href="/LogIn.html">
+                  <i class="fas fa-arrow-left"></i>
+                  Back to Login
+                </a>
+              </div>
+            </div>
+
+            <div class="security-notice">
+              <i class="fas fa-shield-alt security-notice-icon"></i>
+              <div>
+                Your information is encrypted and protected with eco-safe
+                security technology.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/assets/js/forgot.js"></script>
+  </body>
+</html>

@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/assets/css/edukasi.css" />
+    <title>Edukasi - Ecoverse</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+
+    <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Market</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+        <a href="/LogIn.html" class="start-btn">Start Now</a>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/marketplace.html">Market</a></li>
+        <li><a href="/bank.html">Bank</a></li>
+        <li><a href="/about.html">About</a></li>
+      </ul>
+
+      <a href="/LogIn.html" class="start-btn">Start Now</a>
+    </aside>
+
+    <!-- ==== HERO SECTION ==== -->
+    <section class="hero">
+      <div class="hero__left">
+        <h1>Belajar, Beraksi, Selamatkan Bumi</h1>
+        <p>
+          EcoVerse adalah platform edukasi dan inovasi berkelanjutan yang
+          menghubungkan kamu dengan pengetahuan, komunitas, dan teknologi hijau
+          untuk menciptakan planet yang lebih bersih dan lestari.
+        </p>
+        <a href="#" class="btn">
+          <i class="fa-solid fa-leaf"></i> Bergabung Sekarang
+        </a>
+      </div>
+    </section>
+
+    <!-- ==== EDUCATION SECTION ==== -->
+    <section class="education-section" id="education-section">
+      <div class="section-header">
+        <h2 class="section-title">Tantangan Lingkungan Global</h2>
+        <p class="section-subtitle">
+          Memahami masalah lingkungan untuk menciptakan solusi berkelanjutan
+        </p>
+      </div>
+
+      <!-- Desktop Layout - 4 Cards -->
+      <div class="desktop-cards">
+        <!-- Card 1: Global Waste Crisis -->
+        <div class="education-card">
+          <div class="card-icon">
+            <i class="fas fa-globe-americas"></i>
+          </div>
+          <h3 class="card-title">Krisis Sampah Global</h3>
+          <p class="card-description">
+            Setiap tahun, dunia menghasilkan 2,1 miliar ton sampah. Hanya 16%
+            yang didaur ulang, sementara sisanya mencemari lingkungan dan lautan
+            kita.
+          </p>
+        </div>
+
+        <!-- Card 2: Ocean Pollution -->
+        <div class="education-card">
+          <div class="card-icon">
+            <i class="fas fa-water"></i>
+          </div>
+          <h3 class="card-title">Polusi Laut</h3>
+          <p class="card-description">
+            Lebih dari 8 juta ton plastik berakhir di lautan setiap tahun,
+            mengancam ekosistem laut dan rantai makanan global.
+          </p>
+        </div>
+
+        <!-- Card 3: Deforestation -->
+        <div class="education-card">
+          <div class="card-icon">
+            <i class="fas fa-tree"></i>
+          </div>
+          <h3 class="card-title">Deforestasi</h3>
+          <p class="card-description">
+            10 juta hektar hutan hilang setiap tahun, mengurangi penyerapan
+            karbon dan mengancam keanekaragaman hayati dunia.
+          </p>
+        </div>
+
+        <!-- Card 4: Recycling Potential -->
+        <div class="education-card">
+          <div class="card-icon">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h3 class="card-title">Potensi Daur Ulang</h3>
+          <p class="card-description">
+            Dengan teknologi modern, 75% sampah dapat didaur ulang, menghemat
+            energi dan mengurangi eksploitasi sumber daya alam.
+          </p>
+        </div>
+      </div>
+
+      <!-- Mobile Layout - Accordion -->
+      <div class="mobile-accordion" id="education-accordion">
+        <!-- Accordion Item 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div class="accordion-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h3 class="accordion-title">Krisis Sampah Global</h3>
+            <i class="fas fa-chevron-down accordion-arrow"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="accordion-description">
+              Setiap tahun, dunia menghasilkan 2,1 miliar ton sampah. Hanya 16%
+              yang didaur ulang, sementara sisanya mencemari lingkungan dan
+              lautan kita.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div class="accordion-icon">
+              <i class="fas fa-water"></i>
+            </div>
+            <h3 class="accordion-title">Polusi Laut</h3>
+            <i class="fas fa-chevron-down accordion-arrow"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="accordion-description">
+              Lebih dari 8 juta ton plastik berakhir di lautan setiap tahun,
+              mengancam ekosistem laut dan rantai makanan global.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div class="accordion-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h3 class="accordion-title">Deforestasi</h3>
+            <i class="fas fa-chevron-down accordion-arrow"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="accordion-description">
+              10 juta hektar hutan hilang setiap tahun, mengurangi penyerapan
+              karbon dan mengancam keanekaragaman hayati dunia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <div class="accordion-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3 class="accordion-title">Potensi Daur Ulang</h3>
+            <i class="fas fa-chevron-down accordion-arrow"></i>
+          </div>
+          <div class="accordion-content">
+            <p class="accordion-description">
+              Dengan teknologi modern, 75% sampah dapat didaur ulang, menghemat
+              energi dan mengurangi eksploitasi sumber daya alam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== WASTE SORT SECTION ==== -->
+    <section class="waste-sorting-section" id="waste-section">
+      <div class="section-header">
+        <h2 class="section-title">Cara Memilah Sampah</h2>
+        <p class="section-subtitle">
+          Panduan lengkap untuk memilah sampah dengan benar dan mendukung
+          lingkungan berkelanjutan
+        </p>
+      </div>
+
+      <!-- Desktop Layout - 4 Cards -->
+      <div class="desktop-cards">
+        <!-- Card 1: Organik -->
+        <div class="waste-card organic">
+          <div class="card-header">
+            <div class="category-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="card-title">Sampah Organik</h3>
+          </div>
+          <p class="card-description">
+            Sampah yang berasal dari makhluk hidup dan dapat terurai secara
+            alami. Cocok untuk kompos dan pupuk alami.
+          </p>
+          <p class="examples-title">Contoh:</p>
+          <p class="examples-list">
+            Sisa makanan, daun kering, buah & sayur busuk, ampas teh/kopi, kulit
+            telur
+          </p>
+        </div>
+
+        <!-- Card 2: Anorganik -->
+        <div class="waste-card inorganic">
+          <div class="card-header">
+            <div class="category-icon">
+              <i class="fas fa-wine-bottle"></i>
+            </div>
+            <h3 class="card-title">Sampah Anorganik</h3>
+          </div>
+          <p class="card-description">
+            Sampah yang tidak dapat terurai secara alami. Dapat didaur ulang
+            dengan proses khusus di pabrik.
+          </p>
+          <p class="examples-title">Contoh:</p>
+          <p class="examples-list">
+            Botol plastik, kantong plastik, kemasan makanan, kaca, kaleng, karet
+          </p>
+        </div>
+
+        <!-- Card 3: B3 -->
+        <div class="waste-card hazardous">
+          <div class="card-header">
+            <div class="category-icon">
+              <i class="fas fa-radiation"></i>
+            </div>
+            <h3 class="card-title">Sampah B3</h3>
+          </div>
+          <p class="card-description">
+            Bahan Berbahaya dan Beracun yang memerlukan penanganan khusus.
+            Jangan dicampur dengan sampah biasa.
+          </p>
+          <p class="examples-title">Contoh:</p>
+          <p class="examples-list">
+            Baterai, obat kadaluarsa, lampu neon, elektronik rusak, bahan kimia
+            rumah tangga
+          </p>
+        </div>
+
+        <!-- Card 4: Daur Ulang -->
+        <div class="waste-card recyclable">
+          <div class="card-header">
+            <div class="category-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3 class="card-title">Sampah Daur Ulang</h3>
+          </div>
+          <p class="card-description">
+            Sampah yang dapat diproses kembali menjadi bahan baku atau produk
+            baru. Bantu kurangi limbah.
+          </p>
+          <p class="examples-title">Contoh:</p>
+          <p class="examples-list">
+            Kertas, kardus, botol kaca, plastik PET, kaleng aluminium, tekstil
+            bersih
+          </p>
+        </div>
+      </div>
+
+      <!-- Mobile Layout - Accordion -->
+      <div class="waste-mobile-accordion" id="waste-accordion">
+        <!-- Accordion Item 1: Organik -->
+        <div class="waste-accordion-item organic">
+          <div class="waste-accordion-header">
+            <div class="waste-accordion-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3 class="waste-accordion-title">Sampah Organik</h3>
+            <i class="fas fa-chevron-down waste-accordion-arrow"></i>
+          </div>
+          <div class="waste-accordion-content">
+            <div class="waste-accordion-body">
+              <p class="waste-accordion-description">
+                Sampah yang berasal dari makhluk hidup dan dapat terurai secara
+                alami. Cocok untuk kompos dan pupuk alami.
+              </p>
+              <p class="examples-title">Contoh:</p>
+              <p class="examples-list">
+                Sisa makanan, daun kering, buah & sayur busuk, ampas teh/kopi,
+                kulit telur
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 2: Anorganik -->
+        <div class="waste-accordion-item inorganic">
+          <div class="waste-accordion-header">
+            <div class="waste-accordion-icon">
+              <i class="fas fa-wine-bottle"></i>
+            </div>
+            <h3 class="waste-accordion-title">Sampah Anorganik</h3>
+            <i class="fas fa-chevron-down waste-accordion-arrow"></i>
+          </div>
+          <div class="waste-accordion-content">
+            <div class="waste-accordion-body">
+              <p class="waste-accordion-description">
+                Sampah yang tidak dapat terurai secara alami. Dapat didaur ulang
+                dengan proses khusus di pabrik.
+              </p>
+              <p class="examples-title">Contoh:</p>
+              <p class="examples-list">
+                Botol plastik, kantong plastik, kemasan makanan, kaca, kaleng,
+                karet
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 3: B3 -->
+        <div class="waste-accordion-item hazardous">
+          <div class="waste-accordion-header">
+            <div class="waste-accordion-icon">
+              <i class="fas fa-radiation"></i>
+            </div>
+            <h3 class="waste-accordion-title">Sampah B3</h3>
+            <i class="fas fa-chevron-down waste-accordion-arrow"></i>
+          </div>
+          <div class="waste-accordion-content">
+            <div class="waste-accordion-body">
+              <p class="waste-accordion-description">
+                Bahan Berbahaya dan Beracun yang memerlukan penanganan khusus.
+                Jangan dicampur dengan sampah biasa.
+              </p>
+              <p class="examples-title">Contoh:</p>
+              <p class="examples-list">
+                Baterai, obat kadaluarsa, lampu neon, elektronik rusak, bahan
+                kimia rumah tangga
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Accordion Item 4: Daur Ulang -->
+        <div class="waste-accordion-item recyclable">
+          <div class="waste-accordion-header">
+            <div class="waste-accordion-icon">
+              <i class="fas fa-recycle"></i>
+            </div>
+            <h3 class="waste-accordion-title">Sampah Daur Ulang</h3>
+            <i class="fas fa-chevron-down waste-accordion-arrow"></i>
+          </div>
+          <div class="waste-accordion-content">
+            <div class="waste-accordion-body">
+              <p class="waste-accordion-description">
+                Sampah yang dapat diproses kembali menjadi bahan baku atau
+                produk baru. Bantu kurangi limbah.
+              </p>
+              <p class="examples-title">Contoh:</p>
+              <p class="examples-list">
+                Kertas, kardus, botol kaca, plastik PET, kaleng aluminium,
+                tekstil bersih
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== Zero Waste Timeline ==== -->
+    <section>
+      <div class="container">
+        <h2>Panduan Zero Waste untuk Pemula</h2>
+        <p>
+          Ikuti alur sederhana ini untuk mengurangi sampah rumah tangga Anda
+          secara signifikan. Semua tips penting yang dibutuhkan pemula ada di
+          sini!
+        </p>
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-number">1</div>
+            <div class="timeline-content">
+              <div class="timeline-icon">
+                <i class="fas fa-ban"></i>
+              </div>
+              <h3>Kurangi Penggunaan Plastik Sekali Pakai</h3>
+              <p>
+                Ganti kantong plastik dengan tas belanja reusable, bawa botol
+                minum sendiri, dan hindari sedotan plastik.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-number">2</div>
+            <div class="timeline-content">
+              <div class="timeline-icon">
+                <i class="fas fa-trash-alt"></i>
+              </div>
+              <h3>Pilah Sampah dengan Benar</h3>
+              <p>
+                Sediakan tempat sampah terpisah untuk organik, anorganik, dan
+                B3. Pastikan sampah terkontaminasi minimal.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-number">3</div>
+            <div class="timeline-content">
+              <div class="timeline-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h3>Kompos Sampah Organik</h3>
+              <p>
+                Olahlah sampah dapur dan kebun menjadi kompos untuk menyuburkan
+                tanaman di rumah.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="timeline-item">
+            <div class="timeline-number">4</div>
+            <div class="timeline-content">
+              <div class="timeline-icon">
+                <i class="fas fa-shopping-bag"></i>
+              </div>
+              <h3>Belanja dengan Bijak</h3>
+              <p>
+                Beli produk dalam kemasan besar untuk mengurangi sampah, pilih
+                produk dengan kemasan daur ulang.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="timeline-item">
+            <div class="timeline-number">5</div>
+            <div class="timeline-content">
+              <div class="timeline-icon">
+                <i class="fas fa-recycle"></i>
+              </div>
+              <h3>Daur Ulang Kreatif</h3>
+              <p>
+                Manfaatkan barang bekas untuk keperluan lain sebelum
+                membuangnya. Kreativitas mengurangi sampah.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== VIDEO SECTION ==== -->
+    <div class="video-section-container">
+      <div class="video-section-header">
+        <h1 class="video-section-title">Video Edukasi Lingkungan</h1>
+        <p class="video-section-subtitle">
+          Pelajari cara melestarikan lingkungan dengan panduan visual yang
+          informatif dan mudah dipahami
+        </p>
+      </div>
+
+      <div class="video-preview-card">
+        <div class="video-preview-thumbnail" id="videoPreviewThumbnail">
+          <div class="video-loading-indicator" id="videoThumbnailLoading">
+            <div class="video-loading-spinner"></div>
+            Memuat thumbnail...
+          </div>
+          <canvas
+            class="video-thumbnail-canvas"
+            id="videoThumbnailCanvas"
+          ></canvas>
+          <div class="video-thumbnail-overlay">
+            <div class="video-preview-play-button" id="videoPreviewPlayButton">
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+          <div class="video-duration-badge" id="videoDurationBadge">--:--</div>
+        </div>
+        <h2 class="video-preview-title">
+          Video Panduan Daur Ulang Sampah Rumah Tangga
+        </h2>
+        <p class="video-preview-description">
+          Pelajari langkah-langkah praktis untuk memilah dan mendaur ulang
+          sampah rumah tangga dengan benar. Video ini akan menunjukkan cara
+          mengurangi limbah dan memberikan kontribusi positif bagi lingkungan.
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="video-modal-overlay" id="videoModalOverlay">
+      <div class="video-modal-content">
+        <div class="video-modal-close-button" id="videoModalCloseButton">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="video-player-container" id="videoPlayerContainer">
+          <video class="video-player-element" id="videoPlayerElement" controls>
+            <source
+              src="https://youtu.be/NWNNDvehBIU?si=Fy0DGWbxo8Hvgr3k"
+              type="video/mp4"
+            />
+            Browser Anda tidak mendukung pemutar video.
+          </video>
+          <div class="video-player-controls" id="videoPlayerControls">
+            <button class="video-player-play-pause" id="videoPlayerPlayPause">
+              <i class="fas fa-pause"></i>
+            </button>
+            <div class="video-player-progress" id="videoPlayerProgress">
+              <div
+                class="video-player-progress-filled"
+                id="videoPlayerProgressFilled"
+              ></div>
+            </div>
+            <div class="video-player-time" id="videoPlayerTime">
+              0:00 / 0:00
+            </div>
+            <button class="video-player-fullscreen" id="videoPlayerFullscreen">
+              <i class="fas fa-expand"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==== ARTIKEL SECTION ==== -->
+    <div class="articles-section-container">
+      <div class="articles-section-header">
+        <h1 class="articles-section-title">EcoVerse</h1>
+        <p class="articles-section-subtitle">
+          Artikel Terbaru Tentang Lingkungan
+        </p>
+      </div>
+
+      <div class="articles-grid">
+        <!-- Artikel 1 -->
+        <div class="article-card">
+          <img
+            src="/assets/img/edukasi/5langkah.jpeg"
+            alt="Reduce Plastic Waste"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              5 Langkah Mudah Mengurangi Sampah Plastik di Rumah
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 15 Juni 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 5 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Pelajari cara sederhana untuk mengurangi ketergantungan pada
+              plastik sekali pakai dalam kehidupan sehari-hari dan dampaknya
+              terhadap lingkungan Indonesia.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 2 -->
+        <div class="article-card">
+          <img
+            src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80"
+            alt="Compost Benefits"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              Manfaat Kompos bagi Lingkungan dan Ekonomi Keluarga
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 2 Juni 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 7 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Kompos tidak hanya mengurangi sampah organik, tetapi juga
+              menyuburkan tanah dan menghemat pengeluaran keluarga Indonesia
+              untuk pupuk dan pengelolaan sampah.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 3 -->
+        <div class="article-card">
+          <img
+            src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Waste Technology"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              Inovasi Teknologi dalam Pengelolaan Sampah Perkotaan
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 28 Mei 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 10 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Bagaimana teknologi modern membantu mengatasi masalah sampah di
+              kota-kota besar Indonesia, dari aplikasi pemilahan sampah hingga
+              bank sampah digital.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 4 -->
+        <div class="article-card">
+          <img
+            src="/assets/img/edukasi/pilahsampah.jpeg"
+            alt="Waste Sorting"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              Panduan Lengkap Memilah Sampah untuk Pemula
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 20 Mei 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 8 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Mulai dari rumah! Panduan praktis memilah sampah organik,
+              anorganik, dan B3 sesuai dengan regulasi pengelolaan sampah di
+              Indonesia.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 5 -->
+        <div class="article-card">
+          <img
+            src="https://images.unsplash.com/photo-1604187351574-c75ca79f5807?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Recycling Business"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              Peluang Bisnis dari Daur Ulang Sampah di Indonesia
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 12 Mei 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 12 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Ekosistem ekonomi sirkular: bagaimana sampah bisa menjadi sumber
+              pendapatan melalui bank sampah dan industri kreatif daur ulang di
+              Indonesia.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Artikel 6 -->
+        <div class="article-card">
+          <img
+            src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Community Recycling"
+            class="article-image"
+          />
+          <div class="article-content">
+            <h2 class="article-title">
+              Kisah Sukses Komunitas Daur Ulang di Berbagai Daerah Indonesia
+            </h2>
+            <div class="article-meta">
+              <div class="article-date">
+                <i class="far fa-calendar"></i> 5 Mei 2023
+              </div>
+              <div class="article-read-time">
+                <i class="far fa-clock"></i> 9 min read
+              </div>
+            </div>
+            <p class="article-excerpt">
+              Inspirasi dari komunitas-komunitas lokal yang berhasil mengubah
+              masalah sampah menjadi solusi berkelanjutan di berbagai daerah
+              Indonesia.
+            </p>
+            <a href="#" class="article-read-more">
+              Baca Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="articles-cta">
+        <a href="/artikel.html" class="view-all-button">
+          Lihat Semua Artikel <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <!-- ==== CTA SECTION ==== -->
+    <section class="cta-section">
+      <!-- Background Elements -->
+      <div class="bg-overlay"></div>
+      <div class="bg-glow glow-top"></div>
+      <div class="bg-glow glow-bottom"></div>
+
+      <!-- Eco Motifs -->
+      <div class="eco-motif leaf motif-1"></div>
+      <div class="eco-motif circle motif-2"></div>
+      <div class="eco-motif leaf motif-3"></div>
+      <div class="eco-motif wave motif-4"></div>
+      <div class="eco-motif circle motif-5"></div>
+
+      <!-- Content -->
+      <div class="cta-container">
+        <h2 class="cta-title">
+          Jadilah Bagian dari Perubahan Bersama Ecoverse
+        </h2>
+        <p class="cta-text">
+          Bergabunglah dengan ribuan orang lainnya yang sudah berkontribusi
+          menciptakan Indonesia yang lebih bersih dan berkelanjutan.
+        </p>
+        <a href="#" class="cta-button">Mulai Setor Sampah Sekarang</a>
+      </div>
+    </section>
+
+    <!-- ==== FOOTER SECTION ==== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Brand Section -->
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <div class="leaf-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="brand-name">Ecoverse</div>
+          </div>
+          <p class="brand-description">
+            Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih
+            hijau. Mari bersama-sama menjaga bumi untuk generasi mendatang.
+          </p>
+          <div class="social-icons">
+            <a href="/error.html" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="/error.html" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="/error.html" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="/error.html" class="social-icon">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Company Section -->
+        <div class="footer-column">
+          <h3>Perusahaan</h3>
+          <ul class="footer-links">
+            <li><a href="/about.html">Tentang Kami</a></li>
+            <li><a href="/error.html">Blog</a></li>
+            <li><a href="/error.html">Karir</a></li>
+            <li><a href="/kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- Services Section -->
+        <div class="footer-column">
+          <h3>Layanan</h3>
+          <ul class="footer-links">
+            <li><a href=".settings.html">Setor Sampah</a></li>
+            <li><a href="/marketplace.html">Marketplace</a></li>
+            <li><a href="/edukasi.html">Edukasi</a></li>
+            <li><a href="/bank.html">Bank Sampah</a></li>
+          </ul>
+        </div>
+
+        <!-- Help Section -->
+        <div class="footer-column">
+          <h3>Bantuan</h3>
+          <ul class="footer-links">
+            <li><a href="/FAQ.html">FAQ</a></li>
+            <li><a href="/error.html">Syarat & Ketentuan</a></li>
+            <li><a href="/terms.html">Kebijakan Privasi</a></li>
+            <li><a href="/error.html">Pusat Bantuan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2023 Ecoverse. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/edukasi.js"></script>
+  </body>
+</html>

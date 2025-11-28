@@ -1,0 +1,178 @@
+.logo img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 32px;
+  height: 70px;
+  background: var(--light);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.nav-center {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: stretch;
+  gap: 28px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 600;
+  transition: 0.2s ease-in;
+  height: 100%;
+  font-family: "Inter", sans-serif;
+}
+.nav-links a:hover {
+  color: var(--main);
+}
+.avatar {
+  width: 50px;
+  aspect-ratio: 1; /* otomatis height = width */
+  border-radius: 50%;
+  background-color: var(--light-green);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-green);
+  font-weight: bold;
+  transition: all 0.3s;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.profile-dropdown {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  width: 180px;
+  display: none;
+  z-index: 10;
+}
+
+.profile-dropdown.active {
+  display: block;
+  animation: fadeIn 0.3s;
+}
+
+.profile-dropdown a {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.profile-dropdown a i {
+  margin-right: 0.5rem;
+  width: 20px;
+}
+
+.profile-dropdown a:hover {
+  color: var(--primary-green);
+}
+
+.start-btn {
+  background: var(--gradient);
+  color: var(--light);
+  border: none;
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+.start-btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 175, 38, 0.5);
+  margin-bottom: 10px;
+}
+
+/* ---------- HAMBURGER ---------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: var(--main);
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.nav-links i {
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .nav-center {
+    display: none;
+  }
+
+  /* sidebar */
+  .sidebar {
+    z-index: 9999;
+    position: fixed;
+    inset: 0 auto 0 0;
+    width: 260px;
+    background: var(--light);
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%);
+    transition: transform 0.35s ease;
+    padding: 80px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  .sidebar .nav-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .sidebar .start-btn {
+    width: 100%;
+  }
+  .nav-links {
+    margin-top: 50px;
+  }
+  .nav-links li {
+    margin-block: 3px;
+  }
+  .start-btn {
+    margin-top: 80px;
+  }
+}

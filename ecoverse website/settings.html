@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="/assets/img/PURELOGO.png"
+      type="image/png"
+      sizes="32x32"
+    />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      anonymous
+    />
+    <link rel="stylesheet" href="/assets/css/setings.css" />
+
+    <title>Settings</title>
+  </head>
+  <body>
+ <!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+        <div class="user-profile" id="userProfile">
+          <div class="avatar">JD</div>
+          <div class="profile-dropdown" id="profileDropdown">
+            <a href="/profile.html"><i class="fas fa-user-circle"></i> Profile</a>
+            <a href=".settings.html"><i class="fas fa-cogs"></i> Settings</a>
+            <a href="/index.html"><i class="fas fa-sign-out-alt"></i> Logout</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i> Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i> Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i> Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+      </ul>
+    </aside>
+    <!-- Page Header -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Settings</h1>
+        <p>Manage your account, preferences, and application options.</p>
+      </div>
+    </div>
+
+    <!-- Settings Layout -->
+    <div class="settings-container container">
+      <!-- Sidebar Menu -->
+      <div class="settings-sidebar">
+        <ul class="settings-menu">
+          <li>
+            <a href="#" class="active" data-target="account"
+              ><i class="fas fa-user"></i> Account Settings</a
+            >
+          </li>
+          <li>
+            <a href="#" data-target="security"
+              ><i class="fas fa-shield-alt"></i> Security & Password</a
+            >
+          </li>
+          <li>
+            <a href="#" data-target="notifications"
+              ><i class="fas fa-bell"></i> Notifications</a
+            >
+          </li>
+          <li>
+            <a href="#" data-target="privacy"
+              ><i class="fas fa-lock"></i> Privacy</a
+            >
+          </li>
+          <li>
+            <a href="#" data-target="delete"
+              ><i class="fas fa-trash-alt"></i> Delete Account</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Content Panel -->
+      <div class="settings-content">
+        <!-- Account Settings -->
+        <div class="content-section active" id="account">
+          <h2 class="section-title">Account Settings</h2>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              value="john.doe@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="form-control"
+              value="johndoe"
+            />
+          </div>
+
+          <div class="form-group">
+            <label>Profile Picture</label>
+            <div class="profile-picture">
+              <div class="profile-img">JD</div>
+              <div class="profile-actions">
+                <button class="btn btn-outline">
+                  <i class="fas fa-upload"></i> Upload New
+                </button>
+                <button class="btn btn-outline">
+                  <i class="fas fa-trash-alt"></i> Remove
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn btn-primary">
+            <i class="fas fa-save"></i> Save Changes
+          </button>
+        </div>
+
+        <!-- Security & Password -->
+        <div class="content-section" id="security">
+          <h2 class="section-title">Security & Password</h2>
+
+          <div class="form-group">
+            <label for="current-password">Current Password</label>
+            <input type="password" id="current-password" class="form-control" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm New Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                class="form-control"
+              />
+            </div>
+          </div>
+
+          <button class="btn btn-primary">
+            <i class="fas fa-key"></i> Change Password
+          </button>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Two-Factor Authentication</span>
+              <span>Add an extra layer of security to your account</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="login-history">
+            <h3>Login History</h3>
+            <div class="history-item">
+              <div class="history-info">
+                <h4>Chrome on Windows</h4>
+                <p>New York, USA • Just now</p>
+              </div>
+              <div class="history-status">
+                <div class="status-indicator"></div>
+                <span>Current</span>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="history-info">
+                <h4>Safari on iPhone</h4>
+                <p>New York, USA • 2 hours ago</p>
+              </div>
+            </div>
+            <div class="history-item">
+              <div class="history-info">
+                <h4>Firefox on Mac</h4>
+                <p>Boston, USA • 3 days ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Notifications -->
+        <div class="content-section" id="notifications">
+          <h2 class="section-title">Notifications</h2>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Email Notifications</span>
+              <span>Receive updates and announcements via email</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Push Notifications</span>
+              <span>Receive notifications in your browser</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Community Updates</span>
+              <span>Get notified about new community activities</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Activity Reminders</span>
+              <span>Reminders for your eco-activities</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Privacy -->
+        <div class="content-section" id="privacy">
+          <h2 class="section-title">Privacy</h2>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Data Visibility</span>
+              <span>Allow other users to see your activity data</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" checked />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="toggle-group">
+            <div class="toggle-label">
+              <span>Activity Privacy</span>
+              <span>Make your activity history private</span>
+            </div>
+            <label class="toggle-switch">
+              <input type="checkbox" />
+              <span class="toggle-slider"></span>
+            </label>
+          </div>
+
+          <div class="form-group">
+            <button class="btn btn-outline">
+              <i class="fas fa-download"></i> Download Your Data
+            </button>
+          </div>
+        </div>
+
+        <!-- Delete Account -->
+        <div class="content-section" id="delete">
+          <h2 class="section-title">Delete Account</h2>
+
+          <div class="warning-box">
+            <h3><i class="fas fa-exclamation-triangle"></i> Warning</h3>
+            <p>
+              Deleting your account is permanent and cannot be undone. All your
+              data, including your profile, activity history, and connected
+              services will be permanently removed from Ecoverse.
+            </p>
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-delete">Type "DELETE" to confirm</label>
+            <input
+              type="text"
+              id="confirm-delete"
+              class="form-control"
+              placeholder="DELETE"
+            />
+          </div>
+
+          <button class="btn btn-danger">
+            <i class="fas fa-trash-alt"></i> Delete My Account
+          </button>
+        </div>
+      </div>
+    </div>
+
+   <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/settings.js"></script>
+  </body>
+</html>

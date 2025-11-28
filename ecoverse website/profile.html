@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--LINK'S FOR FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--LINK'S FONTAWSOME CDN-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/assets/css/profile.css" />
+    <title>Your Profile</title>
+  </head>
+  <body>
+    <div class="background-container">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+  
+<!--AFTER LOGIN-->
+ <!-- ===== TOP-BAR (DESKTOP) ===== -->
+    <header class="top-bar">
+      <div class="logo">
+        <img src="/assets/img/Logo.png" alt="ecoverselogo" />
+      </div>
+
+      <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-center">
+        <ul class="nav-links">
+          <li><a href="/user.html">Home</a></li>
+          <li><a href="/edukasi.html">Edukasi</a></li>
+          <li><a href="/marketplace.html">Marketplace</a></li>
+          <li><a href="/bank.html">Bank</a></li>
+          <li><a href="/dashboard.html">Dashboard</a></li>
+        </ul>
+      
+      </nav>
+    </header>
+
+    <!-- ===== SIDEBAR (MOBILE) ===== -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="nav-links">
+          <a class="avatar" href="/profile.html">JD</a>
+        </div>
+        <li><a href="/user.html"><i class="fa-solid fa-house"></i>Home</a></li>
+        <li><a href="/edukasi.html"><i class="fas fa-graduation-cap"></i>Edukasi</a></li>
+        <li><a href="/marketplace.html"><i class="fas fa-store"></i>Marketplace</a></li>
+        <li><a href="/bank.html"><i class="fas fa-university"></i>Bank</a></li>
+       <li><a href="/dashboard.html"><i class="fa-solid fa-chart-line"></i>Dashboard</a></li>
+      </ul>
+    </aside>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="profile-layout">
+        <!-- Profile Sidebar -->
+        <div class="profile-sidebar">
+          <!-- Profile Header -->
+          <div class="profile-header">
+            <div class="profile-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="profile-info">
+              <h1>Ketut Wahyu</h1>
+              <p>example@gmail.com</p>
+              <p>ID: EC-789123</p>
+              <div class="eco-badge">Eco Hero</div>
+            </div>
+          </div>
+
+          <!-- Points Summary -->
+          <div class="points-summary">
+            <h3>Total Poin Anda</h3>
+            <div class="points-display">1,850</div>
+
+            <div class="points-history">
+              <div class="point-item">
+                <i class="fas fa-recycle"></i>
+                <span>+150 daur ulang</span>
+              </div>
+              <div class="point-item">
+                <i class="fas fa-tasks"></i>
+                <span>+50 challenge</span>
+              </div>
+              <div class="point-item">
+                <i class="fas fa-user-plus"></i>
+                <span>+100 referal</span>
+              </div>
+            </div>
+
+            <button class="btn" style="width: 100%">Tukar Reward</button>
+          </div>
+
+          <!-- Activity Overview -->
+          <div class="activity-overview">
+            <h3>Ringkasan Aktivitas</h3>
+            <div class="stats-grid">
+              <div class="card stat-card">
+                <div class="stat-icon">
+                  <i class="fas fa-recycle"></i>
+                </div>
+                <div class="stat-number">24</div>
+                <div class="stat-label">Setoran Sampah</div>
+              </div>
+              <div class="card stat-card">
+                <div class="stat-icon">
+                  <i class="fas fa-weight-hanging"></i>
+                </div>
+                <div class="stat-number">48.5</div>
+                <div class="stat-label">Kg Sampah</div>
+              </div>
+              <div class="card stat-card">
+                <div class="stat-icon">
+                  <i class="fas fa-shopping-bag"></i>
+                </div>
+                <div class="stat-number">7</div>
+                <div class="stat-label">Transaksi</div>
+              </div>
+              <div class="card stat-card">
+                <div class="stat-icon">
+                  <i class="fas fa-gift"></i>
+                </div>
+                <div class="stat-number">5</div>
+                <div class="stat-label">Reward Ditukar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Profile Content -->
+        <div class="profile-content">
+          <div class="tabs-container">
+            <!-- Tabs Navigation -->
+            <div class="tabs-navigation">
+              <button class="tab-button active" data-tab="profile">
+                Info Profil
+              </button>
+              <button class="tab-button" data-tab="history">
+                Riwayat Daur Ulang
+              </button>
+              <button class="tab-button" data-tab="orders">
+                Pesanan Marketplace
+              </button>
+              <button class="tab-button" data-tab="rewards">
+                Riwayat Reward
+              </button>
+              <button class="tab-button" data-tab="settings">Pengaturan</button>
+            </div>
+
+            <!-- Tab Contents -->
+            <div class="tab-content active" id="profile">
+              <h3>Informasi Profil</h3>
+              <form>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="firstName">Nama Depan</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      class="form-input"
+                      value="Sarah"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="lastName"
+                      >Nama Belakang</label
+                    >
+                    <input
+                      type="text"
+                      id="lastName"
+                      class="form-input"
+                      value="Johnson"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="form-input"
+                    value="sarah.j@email.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="phone">Nomor Telepon</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="form-input"
+                    value="+62 812 3456 7890"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="address">Alamat</label>
+                  <textarea id="address" class="form-input" rows="3">
+Jl. Merdeka No. 123, Jakarta Pusat</textarea
+                  >
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label">Foto Profil</label>
+                  <div style="display: flex; align-items: center; gap: 15px">
+                    <div
+                      class="profile-avatar"
+                      style="width: 60px; height: 60px; font-size: 1.5rem"
+                    >
+                      <i class="fas fa-user"></i>
+                    </div>
+                    <button type="button" class="btn btn-secondary btn-small">
+                      Ubah Foto
+                    </button>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="password">Password Baru</label>
+                  <input
+                    type="password"
+                    id="password"
+                    class="form-input"
+                    placeholder="Masukkan password baru"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="confirmPassword"
+                    >Konfirmasi Password</label
+                  >
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    class="form-input"
+                    placeholder="Konfirmasi password baru"
+                  />
+                </div>
+
+                <button type="submit" class="btn">Simpan Perubahan</button>
+              </form>
+            </div>
+
+            <div class="tab-content" id="history">
+              <h3>Riwayat Daur Ulang</h3>
+              <div class="card">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tanggal</th>
+                      <th>Jenis Sampah</th>
+                      <th>Jumlah (kg)</th>
+                      <th>Poin</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>15 Juni 2023</td>
+                      <td>Plastik PET</td>
+                      <td>2.5</td>
+                      <td>125</td>
+                    </tr>
+                    <tr>
+                      <td>12 Juni 2023</td>
+                      <td>Kertas</td>
+                      <td>3.0</td>
+                      <td>90</td>
+                    </tr>
+                    <tr>
+                      <td>8 Juni 2023</td>
+                      <td>Kaleng Aluminium</td>
+                      <td>1.2</td>
+                      <td>96</td>
+                    </tr>
+                    <tr>
+                      <td>5 Juni 2023</td>
+                      <td>Kaca</td>
+                      <td>4.5</td>
+                      <td>90</td>
+                    </tr>
+                    <tr>
+                      <td>1 Juni 2023</td>
+                      <td>Elektronik</td>
+                      <td>1 item</td>
+                      <td>200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" id="orders">
+              <h3>Pesanan Marketplace</h3>
+              <div class="card">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>ID Pesanan</th>
+                      <th>Produk</th>
+                      <th>Tanggal</th>
+                      <th>Total</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>EC-789123</td>
+                      <td>Tote Bag Ramah Lingkungan</td>
+                      <td>10 Juni 2023</td>
+                      <td>500 poin</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Selesai</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>EC-789124</td>
+                      <td>Tumbler Stainless Steel</td>
+                      <td>5 Juni 2023</td>
+                      <td>800 poin</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Selesai</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>EC-789125</td>
+                      <td>Paket Bibit Tanaman</td>
+                      <td>28 Mei 2023</td>
+                      <td>300 poin</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Selesai</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>EC-789126</td>
+                      <td>Voucher Belanja 50rb</td>
+                      <td>20 Mei 2023</td>
+                      <td>1000 poin</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Selesai</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" id="rewards">
+              <h3>Riwayat Reward</h3>
+              <div class="card">
+                <table class="data-table">
+                  <thead>
+                    <tr>
+                      <th>Tanggal Klaim</th>
+                      <th>Reward</th>
+                      <th>Poin Dikurangi</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>10 Juni 2023</td>
+                      <td>Tote Bag Ramah Lingkungan</td>
+                      <td>500</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Terkirim</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>5 Juni 2023</td>
+                      <td>Tumbler Stainless Steel</td>
+                      <td>800</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Terkirim</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>28 Mei 2023</td>
+                      <td>Paket Bibit Tanaman</td>
+                      <td>300</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Terkirim</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>20 Mei 2023</td>
+                      <td>Voucher Belanja 50rb</td>
+                      <td>1000</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Terkirim</span
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>15 Mei 2023</td>
+                      <td>E-book Panduan Zero Waste</td>
+                      <td>150</td>
+                      <td>
+                        <span class="status-badge status-completed"
+                          >Terkirim</span
+                        >
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="tab-content" id="settings">
+              <h3>Pengaturan Akun</h3>
+              <div class="card">
+                <div class="settings-option">
+                  <div>
+                    <h4>Mode Gelap</h4>
+                    <p>Aktifkan tampilan gelap untuk kenyamanan mata</p>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="settings-option">
+                  <div>
+                    <h4>Notifikasi Email</h4>
+                    <p>Terima pemberitahuan via email tentang aktivitas akun</p>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="settings-option">
+                  <div>
+                    <h4>Notifikasi Aplikasi</h4>
+                    <p>Terima pemberitahuan dalam aplikasi</p>
+                  </div>
+                  <label class="toggle-switch">
+                    <input type="checkbox" checked />
+                    <span class="toggle-slider"></span>
+                  </label>
+                </div>
+
+                <div class="settings-option">
+                  <div>
+                    <h4>Keluar dari Akun</h4>
+                    <p>Keluar dari akun EcoVerse Anda</p>
+                  </div>
+                  <button class="btn btn-secondary">Keluar</button>
+                </div>
+
+                <div class="settings-option danger-option">
+                  <div>
+                    <h4>Hapus Akun</h4>
+                    <p>Hapus permanen akun dan semua data Anda</p>
+                  </div>
+                  <button
+                    class="btn btn-secondary"
+                    style="border-color: #e74c3c; color: #e74c3c"
+                  >
+                    Hapus Akun
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- ==== FOOTER SECTION ==== -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Brand Section -->
+    <div class="footer-brand">
+      <div class="brand-logo">
+        <div class="leaf-icon">
+          <i class="fas fa-leaf"></i>
+        </div>
+        <div class="brand-name">Ecoverse</div>
+      </div>
+      <p class="brand-description">
+        Menciptakan ekosistem berkelanjutan untuk Indonesia yang lebih hijau.
+        Mari bersama-sama menjaga bumi untuk generasi mendatang.
+      </p>
+      <div class="social-icons">
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="/error.html" class="social-icon">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Company Section -->
+    <div class="footer-column">
+      <h3>Perusahaan</h3>
+      <ul class="footer-links">
+        <li><a href="/about.html">Tentang Kami</a></li>
+        <li><a href="/error.html">Blog</a></li>
+        <li><a href="/error.html">Karir</a></li>
+        <li><a href="/kontak.html">Kontak</a></li>
+      </ul>
+    </div>
+
+    <!-- Services Section -->
+    <div class="footer-column">
+      <h3>Layanan</h3>
+      <ul class="footer-links">
+        <li><a href=".settings.html">Setor Sampah</a></li>
+        <li><a href="/marketplace.html">Marketplace</a></li>
+        <li><a href="/edukasi.html">Edukasi</a></li>
+        <li><a href="/bank.html">Bank Sampah</a></li>
+      </ul>
+    </div>
+
+    <!-- Help Section -->
+    <div class="footer-column">
+      <h3>Bantuan</h3>
+      <ul class="footer-links">
+        <li><a href="/FAQ.html">FAQ</a></li>
+        <li><a href="/error.html">Syarat & Ketentuan</a></li>
+        <li><a href="/terms.html">Kebijakan Privasi</a></li>
+        <li><a href="/error.html">Pusat Bantuan</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2023 Ecoverse. All rights reserved.</p>
+  </div>
+</footer>
+
+    <script src="/assets/js/profile.js"></script>
+  </body>
+</html>
